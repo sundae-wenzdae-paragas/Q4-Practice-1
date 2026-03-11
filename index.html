@@ -12,10 +12,13 @@
 
     <script>
         function checkAge(){
-        if (19 < 18){
+
+        var age = document.getElementById("Age").value;
+
+        if (age < 18){
             alert("You are underage.");
         }
-        else if(21 > 18){
+        else if(age > 18){
             alert("You are of legal age.");
         }
         else{
